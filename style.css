@@ -1,0 +1,43 @@
+/* =========================================
+   Everyday Fit - Global & Dashboard Styles
+   ========================================= */
+
+/* Base Reset & Smooth Transition */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+/* Custom Logout Button Style Enhancements */
+.logout-btn {
+  transition: all 150ms ease-in-out;
+}
+
+.logout-btn:hover {
+  transform: translateY(-1px);
+}
+
+/* Additional Custom Scrollbars for Modals & Tables */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 9999px;
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+  background: #4b5563;
+}
